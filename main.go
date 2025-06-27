@@ -93,6 +93,7 @@ func main() {
 		s3Region:         s3Region,
 		s3CfDistribution: s3CfDistribution,
 		port:             port,
+		s3Client:		  *s3.Client,
 	}
 
 	err = cfg.ensureAssetsDir()
